@@ -148,3 +148,77 @@ img, Home, Help, Confirmation {
 .enjoy-img {
   object-fit: cover;
 }
+
+
+/*
+ * restaurant section
+ */
+
+#rest-container {
+  margin: 6rem auto;
+  width: 80%;
+}
+
+#rest-container-title {
+  font-size: 2.4rem;
+  color: #FE4B01;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0.5rem 1.5rem;
+}
+
+/*
+ * restaurant cards
+ */
+ #rest-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.75rem;
+ }
+
+ #rest-container img {
+  height: 20rem;
+  width: 30rem;
+  padding: 0.5rem 0.75rem;
+ }
+
+ .rest-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+ }
+
+ .rest-name {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 0.5rem 1.5rem;
+ }
+
+ .rest-descs {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+ }
+ 
+ .rest-delivery {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+ }
+
+ .rest-delivery span {
+  width: 0.5rem;
+ }
+
+ .rest-box {
+  border: 1px solid #FE4B01;
+  padding: 0.5rem 0.5rem;
+ }
