@@ -305,7 +305,7 @@ select {
 }
 
 #special-container {
-  margin: 1.5rem 1rem;
+  margin: 1.5rem 1.5rem;
   height: 6rem;
 }
 
@@ -355,8 +355,8 @@ select {
 }
 
 button {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
   height: 4rem;
   width: 10rem;
 }

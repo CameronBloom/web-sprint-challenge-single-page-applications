@@ -23,7 +23,7 @@ export default function Form(props) {
         <div id="pizza-header"><h6>Build Your Own Pizza</h6></div>
         <img id="pizza-img" src={imgPizza} alt="good looking pizza" />
         <div id="pizza-desc"><h6>Build Your Own Pizza</h6></div>
-        <form id="pizza-form">
+        <form id="pizza-form" onSubmit={ props.handleSubmit }>
           <label htmlFor="name">
             <p className="bold">Enter Your Name</p>
             <div className="error"><p>Required...</p>&nbsp;<p>{props.errors.name}</p></div>
@@ -52,7 +52,7 @@ export default function Form(props) {
           </label>
           <div id="radio-container" onChange={props.handleChange} value={props.form["sauce"]}>
             <div className="radio-row">
-              <input type="radio" id="sauce1" name="sauce" value="Original Red" />
+              <input type="radio" id="sauce1" name="sauce" value="Original Red" defaultChecked />
               <label htmlFor="sauce1" className="sauce-label">Original Red</label>
             </div>
             <div className="radio-row">
@@ -76,19 +76,19 @@ export default function Form(props) {
           <div id="checkbox-container">
             <div id="checkbox-left">
               <div className="checkbox-row">
-                <input type="checkbox" id="topping1" name="topping1" value="Pepperoni" />
+                <input type="checkbox" id="topping1" name="topping1" onChange={props.handleChange} value={props.form["topping1"]} />
                 <label htmlFor="topping1">Pepperoni</label>
               </div>
               <div className="checkbox-row">
-                <input type="checkbox" id="topping2" name="topping2" value="Sausage" />
+                <input type="checkbox" id="topping2" name="topping2" onChange={props.handleChange} value={props.form["topping2"]} />
                 <label htmlFor="topping2">Sausage</label>
               </div>
               <div className="checkbox-row">
-                <input type="checkbox" id="topping3" name="topping3" value="Canadian Bacon" />
+                <input type="checkbox" id="topping3" name="topping3" onChange={props.handleChange} value={props.form["topping3"]} />
                 <label htmlFor="topping3">Canadian Bacon</label>
               </div>
               <div className="checkbox-row">
-                <input type="checkbox" id="topping4" name="topping4" value="Spicy Italian Sausage" />
+                <input type="checkbox" id="topping4" name="topping4" onChange={props.handleChange} value={props.form["topping4"]} />
                 <label htmlFor="topping4">Spicy Italian Sausage</label>
               </div>
               <div className="checkbox-row">
@@ -173,7 +173,7 @@ export default function Form(props) {
             <div id="pizza-counter">1</div>
             <div id="pizza-submit">Add to Order</div>
           </div> */}
-          <button disabled={props.disabled}>Submit</button>
+          <button id="order-button" disabled={props.disabled} type="submit">Add to Order</button>
         </form>
       </div>
 
