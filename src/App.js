@@ -16,10 +16,6 @@ const App = () => {
         </nav>
         
       </div>
-      <div>
-      <Link id="order-pizza" to="/">Home</Link><span />
-      </div>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/help" element={<Help />} />

@@ -6,7 +6,7 @@ export default function Confirmation(props) {
     <>
       <div className="img-container">
         <img className="img" src={imgPizza} alt="good looking pizza"></img>
-        <div claclassNames="img-text"><h3>Congrats! Pizza is on its way</h3></div>
+        <div className="img-text"><h3>Congrats! Pizza is on its way</h3></div>
       </div>
       <div className="enjoy">
         <div className="enjoy-text"><h6>Enjoy this Dog with Pizza</h6></div>

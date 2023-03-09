@@ -80,7 +80,7 @@
   line-height: 3.5rem;
 }
 
-a:hover {
+a:hover, #order-pizza:hover {
   background-color: #FE4B01;
   color: white;
 }
@@ -112,6 +112,24 @@ img, Home, Help, Confirmation {
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  width: 100%;
+}
+
+#order-pizza {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 2.4rem;
+  color: #FE4B01;
+  display: inline-block;
+  border: 1px solid #FE4B01;
+  width: 12rem;
+  height: 4rem;
+  text-align: center;
+  line-height: 3.5rem;
+  background-color: white;
 }
 
 .enjoy {
