@@ -263,6 +263,39 @@ img, Home, Help, Confirmation {
   margin: 1.5rem 1rem;
 }
 
+select {
+  margin: 1.5rem 1rem;
+  width: 33%;
+  min-width: 33%;
+}
+
+#name-input {
+  width: 33%;
+  min-width: 33%;  
+}
+#radio-container {
+  margin: 0.5rem;
+}
+.radio-row {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.5rem;
+}
+#radio-container .radio-row label {
+  background-color: white;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  padding: 1rem 1rem;
+}
+
+#radio-container .radio-row input {
+  /* background-color: white; */
+  /* font-size: 1.4rem; */
+  /* line-height: 1.4rem; */
+  padding: 1rem 0rem;
+  margin: 1rem 1rem;;
+}
+
 #special-text {
   padding: 0.5rem;
   width: 100%;
@@ -276,21 +309,54 @@ img, Home, Help, Confirmation {
   height: 6rem;
 }
 
-.radio-row {
+#checkbox-container {
   display: flex;
   flex-direction: row;
-  padding: 0 0.5rem;
+  width: 100%;
+  gap: 1rem;
+  margin: 0.5rem;
 }
-#radio-container .radio-row label {
+
+#checkbox-left, #checkbox-left {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.checkbox-row {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+#checkbox-left .checkbox-row input, #checkbox-right .checkbox-row input {
+  padding: 1rem 0rem;
+  margin: 1rem 1rem;;
+}
+
+#checkbox-left .checkbox-row label, #checkbox-right .checkbox-row label {
   background-color: white;
   font-size: 1.4rem;
   line-height: 1.4rem;
-  padding: 1.5rem 0;
+  padding: 1rem 1rem;
 }
 
+
+.error {
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  vertical-align: center;
+}
 /*
  * random styling
  */
 .bold {
   font-weight: bold;
+}
+
+button {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  height: 4rem;
+  width: 10rem;
 }
