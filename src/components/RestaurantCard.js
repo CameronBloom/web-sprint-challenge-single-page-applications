@@ -14,6 +14,8 @@ export default function RestaurantCard(props) {
             return (
               <div>&#x2022;&nbsp;{tag}&nbsp;</div>
             )
+          } else {
+            return true;
           }
         })}
       </div>
