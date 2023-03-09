@@ -45,6 +45,27 @@ export default function Form(props) {
             <p className="bold">Choice of Sauce</p>
             <p>Required</p>
           </label>
+          <div id="radio-container">
+            <div className="radio-row">
+              <input type="radio" id="sauce1" name="sauce" value="Original Red" />
+              <label for="sauce1" className="sauce-label">Original Red</label>
+            </div>
+            <div className="radio-row">
+              <input type="radio" id="sauce2" name="sauce" value="Garlic Ranch" />
+              <label for="sauce2">Garlic Ranch</label>
+            </div>
+            <div className="radio-row">
+              <input type="radio" id="sauce3" name="sauce" value="BBQ Sauce" />
+              <label for="sauce3">BBQ Sauce</label>
+            </div>
+            <div className="radio-row">
+              <input type="radio" id="sauce4" name="sauce" value="Spinach Alfredo" />
+              <label for="sauce4">Spinach Alfredo</label>
+            </div>
+          </div>
+
+
+
           <label for="toppings">
             <p className="bold">Add Toppings</p>
             <p>Choose up to 10.</p>
@@ -56,6 +77,16 @@ export default function Form(props) {
           <label for="special-text">
             <p className="bold">Special Instructions</p>
           </label>
+          <div id="special-container">
+            <textarea 
+              type="text"
+              id="special-text"
+              name="special-text"
+              // value={props.form["firstName"]}
+              // onChange={props.handleChange}
+            />
+          </div>
+ 
           {/* <input 
               type="text"
               id="name-input"
