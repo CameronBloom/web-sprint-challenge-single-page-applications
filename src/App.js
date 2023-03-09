@@ -2,24 +2,28 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home.js"
 import Help from "./components/Help";
-import Confirmation from "./components/Confirmation.js";
+// import Confirmation from "./components/Confirmation.js";
 
 const App = () => {
   return (
     <>
-      <div class="row top-bar">
-        <div class="title">Bloomtech Eats</div>
-        <nav class="nav-bar">
-          <Link to="/">Home Screen</Link>&nbsp;
-          <Link to="/help">Help Screen</Link>&nbsp;
-          <Link to="/confirm">Confirmation Screen</Link>&nbsp;
+      <div className="row top-bar">
+        <div className="title"><h6>Bloomtech Eats</h6></div>
+        <nav className="nav-bar">
+          <Link id="btn-home" to="/">Home</Link><span />
+          <Link id="btn-help" to="/help">Help</Link><span />
+          {/* <Link to="/confirm">Confirmation</Link> */}
         </nav>
+        
+      </div>
+      <div>
+      <Link id="order-pizza" to="/">Home</Link><span />
       </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/help" element={<Help />} />
-        <Route path="/confirm" element={<Confirmation />} />
+        {/* <Route path="/confirm" element={<Confirmation />} /> */}
       </Routes>
     </>
   );
